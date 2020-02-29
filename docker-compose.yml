@@ -1,0 +1,10 @@
+version: "3"
+services:
+  jupyter:
+    build:
+      context: ./jupyter
+    ports:
+      - 8888:8888
+    volumes:
+      - ~/:/usr/src/app/data
+    command: jupyter notebook --allow-root --NotebookApp.password='sha1:1a8ac2eb0d04:44a9ddd05b0edab16d023e6cd959fabc21460533' --notebook-dir='/usr/src/app/data'

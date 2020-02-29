@@ -1,0 +1,7 @@
+scipy
+numpy
+matplotlib
+seaborn
+tqdm
+joblib
+pandas<=0.25
